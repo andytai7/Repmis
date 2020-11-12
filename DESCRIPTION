@@ -1,0 +1,16 @@
+Package: Repmis
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Andy",
+           family = "Tai",
+           role = c("aut", "cre"),
+           email = "andymytai@alumni.ubc.ca",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: The name of this argument is RepMis (Replace Missing Data). This is because this function created replaces missing data with simple imputations function. Simple imputations calculates and utilizes different functions such as median, mean etc. We allow users the freedom to choose what methods to change not available factors. Verbose was used so that individuals can check if the function was running. The input has to be a numerical vector because we are trying to find different mean, median values from the input. If the input is non numerical values, we have shown users that this is the case with an error message, and this function will replace all missing values with the string "none". .
+License: `use_mit_license()`, `use_gpl3_license()` or friends to
+    pick a license
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1

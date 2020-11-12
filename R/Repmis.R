@@ -1,6 +1,13 @@
+#' Repmis
 #'
+#' @param x Numeric Vector or Vector
 #'
+#' @return
+#' A vector containing NA values replaced
+#' @export
 #'
+#' @examples
+#' Repmis(x, fun = , verbose = )
 
 Repmis <- function(x, fun = median, verbose = FALSE) {
   if(!is.numeric(x)) {

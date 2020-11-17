@@ -1,0 +1,45 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# Repmis
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of Repmis is to provide the 'Repmis' function with some friends.
+Repmis is a system replacing missing values in data sets. You provide the data, tell Repmis what function to calculate missnig variables, and it wiill replace the numeric vector for you. 
+
+
+## Installation
+
+You can install the released version of Repmis from 
+
+``` r
+devtools::install_gihub("andytai7/Repmis")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(Repmis)
+library(datateachr)
+Repmis(vancouver_trees$longitude)
+```
+
+## Learning Repmis
+
+If you are new to Repmis, Repmis is a function to help replace missing data in large data sets. Because of this, Repmis works welll with numeric vectors We have embedded simple input functions from the useful package, and replaced all missing values with the simple input. Users can choose which function they use to calculate the replacement of these missing values. In the case of non numeric values, we have replaced non numeric vectors with N/As with null. 

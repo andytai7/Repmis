@@ -1,0 +1,32 @@
+---
+title: "Repmis"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Repmis}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(Repmis)
+library(datateachr)
+```
+
+This is how Repmis works with numeric values: 
+
+```{r demo numeric vector}
+Repmis(vancouver_trees$longitude)
+```
+
+This is how Repmis works with numeric values: 
+
+```{r demo non numeric vector}
+Repmis(vancouver_trees$neighbourhood_name)
+```

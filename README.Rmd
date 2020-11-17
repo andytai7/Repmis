@@ -30,6 +30,10 @@ You can install the released version of Repmis from
 devtools::install_gihub("andytai7/Repmis")
 ```
 
+## Learning Repmis
+
+If you are new to Repmis, Repmis is a function to help replace missing data in large data sets. Because of this, Repmis works welll with numeric vectors We have embedded simple input functions from the useful package, and replaced all missing values with the simple input. Users can choose which function they use to calculate the replacement of these missing values. In the case of non numeric values, we have replaced non numeric vectors with N/As with null. 
+
 ## Example
 
 This is a basic example which shows you how to solve a common problem:
@@ -40,6 +44,3 @@ library(datateachr)
 Repmis(vancouver_trees$longitude)
 ```
 
-## Learning Repmis
-
-If you are new to Repmis, Repmis is a function to help replace missing data in large data sets. Because of this, Repmis works welll with numeric vectors We have embedded simple input functions from the useful package, and replaced all missing values with the simple input. Users can choose which function they use to calculate the replacement of these missing values. In the case of non numeric values, we have replaced non numeric vectors with N/As with null. 
